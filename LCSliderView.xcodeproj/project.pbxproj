@@ -25,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9D814DC41F3BF5E3001D2280 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		9D8F42DF1F3BEE070065C8E6 /* libLCSliderView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLCSliderView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8F42E21F3BEE070065C8E6 /* LCSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSliderView.h; sourceTree = "<group>"; };
 		9D8F42E31F3BEE070065C8E6 /* LCSliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSliderView.m; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 			children = (
 				9D8F42E21F3BEE070065C8E6 /* LCSliderView.h */,
 				9D8F42E31F3BEE070065C8E6 /* LCSliderView.m */,
+				9D814DC41F3BF5E3001D2280 /* images.xcassets */,
 			);
 			path = LCSliderView;
 			sourceTree = "<group>";
@@ -260,6 +262,7 @@
 				9D8F42EA1F3BEE070065C8E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
