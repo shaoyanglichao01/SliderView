@@ -29,6 +29,14 @@
 
 @implementation LCSliderView
 
++ (NSBundle *)lc_slidrBundle {
+  static NSBundle *sliderBundle = nil;
+  if (!sliderBundle) {
+    sliderBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[LCSliderView class]] pathForResource:@"sliderView" ofType:@"bundle"]];
+  }
+  return sliderBundle;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame {
   self = [super initWithFrame:frame];
   if (self) {
@@ -217,7 +225,7 @@
 #pragma mark - accessor
 - (UIView *)sliderView {
   if (!_sliderView) {
-    _sliderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH-12, 8)];
+    _sliderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width-12, 8)];
     _sliderView.backgroundColor = self.selectColor;
   }
   return _sliderView;
@@ -225,7 +233,7 @@
 
 - (UIView *)sliderbgView {
   if (!_sliderbgView) {
-    _sliderbgView = [[UIView alloc] initWithFrame:CGRectMake(6, 45, SCREEN_WIDTH-12, 8)];
+    _sliderbgView = [[UIView alloc] initWithFrame:CGRectMake(6, 45, self.bounds.size.width-12, 8)];
     _sliderbgView.backgroundColor = [UIColor grayColor];
     _sliderbgView.layer.cornerRadius = 4.0;
     _sliderbgView.layer.masksToBounds = YES;
@@ -236,19 +244,13 @@
 
 - (UIButton *)leftSliderButton {
   if (!_leftSliderButton) {
-    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[LCSliderView class]] pathForResource:@"sliderView" ofType:@"bundle"]];
-    UIImage *imgM = [UIImage imageWithContentsOfFile:[bundle pathForResource:@"hotelslider@2x" ofType:@"png"]];
-    
-//    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"sliderView" ofType:@"bundle"];
-//    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
-//    NSString *path = [bundle pathForResource:@"hotelslider" ofType:@"png"];
-//    UIImage *imgM = [UIImage imageWithContentsOfFile:path];
-    
+    NSString *path = [[LCSliderView lc_slidrBundle] pathForResource:@"hotelslider@2x" ofType:@"png" inDirectory:@"images"];
+    UIImage *image = [UIImage imageWithContentsOfFile:path];
     _leftSliderButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_leftSliderButton setFrame:CGRectMake(left_offset, 8, 45, 45)];
     [_leftSliderButton setCenter:CGPointMake(_leftSliderButton.center.x-(_leftSliderButton.frame.size.width/2.f), 49)];
-    [_leftSliderButton setImage:imgM forState:UIControlStateNormal];
-    [_leftSliderButton setImage:imgM forState:UIControlStateHighlighted];
+    [_leftSliderButton setImage:image forState:UIControlStateNormal];
+    [_leftSliderButton setImage:image forState:UIControlStateHighlighted];
     [_leftSliderButton setImageEdgeInsets:UIEdgeInsetsMake(2.5, 7, 2.5, 7)];
     [_leftSliderButton addTarget:self action:@selector(sliderTouchDown:withEvent:) forControlEvents:UIControlEventTouchDown];
     [_leftSliderButton addTarget:self action:@selector(sliderTouchUp:) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchUpOutside];
@@ -259,13 +261,13 @@
 
 - (UIButton *)rightSliderButton {
   if (!_rightSliderButton) {
-    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[LCSliderView class]] pathForResource:@"sliderView" ofType:@"bundle"]];
-    UIImage *imgM = [UIImage imageWithContentsOfFile:[bundle pathForResource:@"hotelslider" ofType:@"png"]];
+    NSString *path = [[LCSliderView lc_slidrBundle] pathForResource:@"hotelslider@2x" ofType:@"png" inDirectory:@"images"];
+    UIImage *image = [UIImage imageWithContentsOfFile:path];
     _rightSliderButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_rightSliderButton setFrame:CGRectMake(self.frame.size.width - left_offset, 8, 45, 45)];
     [_rightSliderButton setCenter:CGPointMake(_rightSliderButton.center.x-(_rightSliderButton.frame.size.width/2.f), 49)];
-    [_rightSliderButton setImage:imgM forState:UIControlStateNormal];
-    [_rightSliderButton setImage:imgM forState:UIControlStateHighlighted];
+    [_rightSliderButton setImage:image forState:UIControlStateNormal];
+    [_rightSliderButton setImage:image forState:UIControlStateHighlighted];
     [_rightSliderButton setImageEdgeInsets:UIEdgeInsetsMake(2.5, 7, 2.5, 7)];
     [_rightSliderButton addTarget:self action:@selector(sliderTouchDown:withEvent:) forControlEvents:UIControlEventTouchDown];
     [_rightSliderButton addTarget:self action:@selector(sliderTouchUp:) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchUpOutside];

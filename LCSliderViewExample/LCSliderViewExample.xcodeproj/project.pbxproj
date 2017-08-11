@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D8F43381F3BF09D0065C8E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F43371F3BF09D0065C8E6 /* main.m */; };
-		9D8F433B1F3BF09D0065C8E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F433A1F3BF09D0065C8E6 /* AppDelegate.m */; };
-		9D8F433E1F3BF09D0065C8E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F433D1F3BF09D0065C8E6 /* ViewController.m */; };
-		9D8F43411F3BF09D0065C8E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8F433F1F3BF09D0065C8E6 /* Main.storyboard */; };
-		9D8F43431F3BF09D0065C8E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8F43421F3BF09D0065C8E6 /* Assets.xcassets */; };
-		9D8F43461F3BF09D0065C8E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8F43441F3BF09D0065C8E6 /* LaunchScreen.storyboard */; };
 		9D8F43511F3BF09E0065C8E6 /* LCSliderViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F43501F3BF09E0065C8E6 /* LCSliderViewExampleTests.m */; };
 		9D8F435C1F3BF09E0065C8E6 /* LCSliderViewExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8F435B1F3BF09E0065C8E6 /* LCSliderViewExampleUITests.m */; };
+		9DC951791F3D818400B440CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC9516F1F3D818300B440CC /* AppDelegate.m */; };
+		9DC9517A1F3D818400B440CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC951701F3D818300B440CC /* Assets.xcassets */; };
+		9DC9517B1F3D818400B440CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC951711F3D818300B440CC /* LaunchScreen.storyboard */; };
+		9DC9517C1F3D818400B440CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC951731F3D818400B440CC /* Main.storyboard */; };
+		9DC9517D1F3D818400B440CC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DC951751F3D818400B440CC /* Info.plist */; };
+		9DC9517E1F3D818400B440CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC951761F3D818400B440CC /* main.m */; };
+		9DC9517F1F3D818400B440CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC951781F3D818400B440CC /* ViewController.m */; };
+		9DC951841F3D819C00B440CC /* LCSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC951821F3D819C00B440CC /* LCSliderView.m */; };
+		9DC951851F3D819C00B440CC /* sliderView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9DC951831F3D819C00B440CC /* sliderView.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,21 +39,24 @@
 
 /* Begin PBXFileReference section */
 		9D8F43331F3BF09D0065C8E6 /* LCSliderViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCSliderViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D8F43371F3BF09D0065C8E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9D8F43391F3BF09D0065C8E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9D8F433A1F3BF09D0065C8E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9D8F433C1F3BF09D0065C8E6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9D8F433D1F3BF09D0065C8E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9D8F43401F3BF09D0065C8E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9D8F43421F3BF09D0065C8E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D8F43451F3BF09D0065C8E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9D8F43471F3BF09D0065C8E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D8F434C1F3BF09E0065C8E6 /* LCSliderViewExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCSliderViewExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8F43501F3BF09E0065C8E6 /* LCSliderViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSliderViewExampleTests.m; sourceTree = "<group>"; };
 		9D8F43521F3BF09E0065C8E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D8F43571F3BF09E0065C8E6 /* LCSliderViewExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCSliderViewExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8F435B1F3BF09E0065C8E6 /* LCSliderViewExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSliderViewExampleUITests.m; sourceTree = "<group>"; };
 		9D8F435D1F3BF09E0065C8E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DC9516E1F3D818300B440CC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9DC9516F1F3D818300B440CC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9DC951701F3D818300B440CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DC951721F3D818300B440CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DC951741F3D818400B440CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DC951751F3D818400B440CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DC951761F3D818400B440CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9DC951771F3D818400B440CC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9DC951781F3D818400B440CC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9DC951811F3D819C00B440CC /* LCSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSliderView.h; sourceTree = "<group>"; };
+		9DC951821F3D819C00B440CC /* LCSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSliderView.m; sourceTree = "<group>"; };
+		9DC951831F3D819C00B440CC /* sliderView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sliderView.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +87,7 @@
 		9D8F432A1F3BF09D0065C8E6 = {
 			isa = PBXGroup;
 			children = (
-				9D8F43351F3BF09D0065C8E6 /* LCSliderViewExample */,
+				9DC9516D1F3D818300B440CC /* LCSliderViewExample */,
 				9D8F434F1F3BF09E0065C8E6 /* LCSliderViewExampleTests */,
 				9D8F435A1F3BF09E0065C8E6 /* LCSliderViewExampleUITests */,
 				9D8F43341F3BF09D0065C8E6 /* Products */,
@@ -96,30 +102,6 @@
 				9D8F43571F3BF09E0065C8E6 /* LCSliderViewExampleUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9D8F43351F3BF09D0065C8E6 /* LCSliderViewExample */ = {
-			isa = PBXGroup;
-			children = (
-				9D8F43391F3BF09D0065C8E6 /* AppDelegate.h */,
-				9D8F433A1F3BF09D0065C8E6 /* AppDelegate.m */,
-				9D8F433C1F3BF09D0065C8E6 /* ViewController.h */,
-				9D8F433D1F3BF09D0065C8E6 /* ViewController.m */,
-				9D8F433F1F3BF09D0065C8E6 /* Main.storyboard */,
-				9D8F43421F3BF09D0065C8E6 /* Assets.xcassets */,
-				9D8F43441F3BF09D0065C8E6 /* LaunchScreen.storyboard */,
-				9D8F43471F3BF09D0065C8E6 /* Info.plist */,
-				9D8F43361F3BF09D0065C8E6 /* Supporting Files */,
-			);
-			path = LCSliderViewExample;
-			sourceTree = "<group>";
-		};
-		9D8F43361F3BF09D0065C8E6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9D8F43371F3BF09D0065C8E6 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		9D8F434F1F3BF09E0065C8E6 /* LCSliderViewExampleTests */ = {
@@ -138,6 +120,34 @@
 				9D8F435D1F3BF09E0065C8E6 /* Info.plist */,
 			);
 			path = LCSliderViewExampleUITests;
+			sourceTree = "<group>";
+		};
+		9DC9516D1F3D818300B440CC /* LCSliderViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				9DC951801F3D819C00B440CC /* LCSliderView */,
+				9DC9516E1F3D818300B440CC /* AppDelegate.h */,
+				9DC9516F1F3D818300B440CC /* AppDelegate.m */,
+				9DC951701F3D818300B440CC /* Assets.xcassets */,
+				9DC951711F3D818300B440CC /* LaunchScreen.storyboard */,
+				9DC951731F3D818400B440CC /* Main.storyboard */,
+				9DC951751F3D818400B440CC /* Info.plist */,
+				9DC951761F3D818400B440CC /* main.m */,
+				9DC951771F3D818400B440CC /* ViewController.h */,
+				9DC951781F3D818400B440CC /* ViewController.m */,
+			);
+			path = LCSliderViewExample;
+			sourceTree = "<group>";
+		};
+		9DC951801F3D819C00B440CC /* LCSliderView */ = {
+			isa = PBXGroup;
+			children = (
+				9DC951811F3D819C00B440CC /* LCSliderView.h */,
+				9DC951821F3D819C00B440CC /* LCSliderView.m */,
+				9DC951831F3D819C00B440CC /* sliderView.bundle */,
+			);
+			name = LCSliderView;
+			path = ../../LCSliderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +259,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D8F43461F3BF09D0065C8E6 /* LaunchScreen.storyboard in Resources */,
-				9D8F43431F3BF09D0065C8E6 /* Assets.xcassets in Resources */,
-				9D8F43411F3BF09D0065C8E6 /* Main.storyboard in Resources */,
+				9DC951851F3D819C00B440CC /* sliderView.bundle in Resources */,
+				9DC9517D1F3D818400B440CC /* Info.plist in Resources */,
+				9DC9517C1F3D818400B440CC /* Main.storyboard in Resources */,
+				9DC9517A1F3D818400B440CC /* Assets.xcassets in Resources */,
+				9DC9517B1F3D818400B440CC /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,9 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D8F433E1F3BF09D0065C8E6 /* ViewController.m in Sources */,
-				9D8F433B1F3BF09D0065C8E6 /* AppDelegate.m in Sources */,
-				9D8F43381F3BF09D0065C8E6 /* main.m in Sources */,
+				9DC9517F1F3D818400B440CC /* ViewController.m in Sources */,
+				9DC9517E1F3D818400B440CC /* main.m in Sources */,
+				9DC951841F3D819C00B440CC /* LCSliderView.m in Sources */,
+				9DC951791F3D818400B440CC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,20 +327,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9D8F433F1F3BF09D0065C8E6 /* Main.storyboard */ = {
+		9DC951711F3D818300B440CC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9D8F43401F3BF09D0065C8E6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9D8F43441F3BF09D0065C8E6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9D8F43451F3BF09D0065C8E6 /* Base */,
+				9DC951721F3D818300B440CC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9DC951731F3D818400B440CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DC951741F3D818400B440CC /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
