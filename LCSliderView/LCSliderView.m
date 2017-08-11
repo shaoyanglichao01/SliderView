@@ -7,6 +7,7 @@
 //
 
 #import "LCSliderView.h"
+#import <Foundation/NSBundle.h>
 
 #define left_offset 20
 #define right_offset 20
@@ -235,11 +236,19 @@
 
 - (UIButton *)leftSliderButton {
   if (!_leftSliderButton) {
+    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[LCSliderView class]] pathForResource:@"sliderView" ofType:@"bundle"]];
+    UIImage *imgM = [UIImage imageWithContentsOfFile:[bundle pathForResource:@"hotelslider@2x" ofType:@"png"]];
+    
+//    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"sliderView" ofType:@"bundle"];
+//    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+//    NSString *path = [bundle pathForResource:@"hotelslider" ofType:@"png"];
+//    UIImage *imgM = [UIImage imageWithContentsOfFile:path];
+    
     _leftSliderButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_leftSliderButton setFrame:CGRectMake(left_offset, 8, 45, 45)];
     [_leftSliderButton setCenter:CGPointMake(_leftSliderButton.center.x-(_leftSliderButton.frame.size.width/2.f), 49)];
-    [_leftSliderButton setImage:[UIImage imageNamed:@"hotelslider"] forState:UIControlStateNormal];
-    [_leftSliderButton setImage:[UIImage imageNamed:@"hotelslider"] forState:UIControlStateHighlighted];
+    [_leftSliderButton setImage:imgM forState:UIControlStateNormal];
+    [_leftSliderButton setImage:imgM forState:UIControlStateHighlighted];
     [_leftSliderButton setImageEdgeInsets:UIEdgeInsetsMake(2.5, 7, 2.5, 7)];
     [_leftSliderButton addTarget:self action:@selector(sliderTouchDown:withEvent:) forControlEvents:UIControlEventTouchDown];
     [_leftSliderButton addTarget:self action:@selector(sliderTouchUp:) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchUpOutside];
@@ -250,11 +259,13 @@
 
 - (UIButton *)rightSliderButton {
   if (!_rightSliderButton) {
+    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[LCSliderView class]] pathForResource:@"sliderView" ofType:@"bundle"]];
+    UIImage *imgM = [UIImage imageWithContentsOfFile:[bundle pathForResource:@"hotelslider" ofType:@"png"]];
     _rightSliderButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_rightSliderButton setFrame:CGRectMake(self.frame.size.width - left_offset, 8, 45, 45)];
     [_rightSliderButton setCenter:CGPointMake(_rightSliderButton.center.x-(_rightSliderButton.frame.size.width/2.f), 49)];
-    [_rightSliderButton setImage:[UIImage imageNamed:@"hotelslider"] forState:UIControlStateNormal];
-    [_rightSliderButton setImage:[UIImage imageNamed:@"hotelslider"] forState:UIControlStateHighlighted];
+    [_rightSliderButton setImage:imgM forState:UIControlStateNormal];
+    [_rightSliderButton setImage:imgM forState:UIControlStateHighlighted];
     [_rightSliderButton setImageEdgeInsets:UIEdgeInsetsMake(2.5, 7, 2.5, 7)];
     [_rightSliderButton addTarget:self action:@selector(sliderTouchDown:withEvent:) forControlEvents:UIControlEventTouchDown];
     [_rightSliderButton addTarget:self action:@selector(sliderTouchUp:) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchUpOutside];

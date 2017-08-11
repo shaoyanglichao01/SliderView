@@ -25,10 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9D814DC41F3BF5E3001D2280 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		9D8F42DF1F3BEE070065C8E6 /* libLCSliderView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLCSliderView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8F42E21F3BEE070065C8E6 /* LCSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSliderView.h; sourceTree = "<group>"; };
 		9D8F42E31F3BEE070065C8E6 /* LCSliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSliderView.m; sourceTree = "<group>"; };
+		9DC951561F3D51EC00B440CC /* sliderView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sliderView.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +61,19 @@
 		9D8F42E11F3BEE070065C8E6 /* LCSliderView */ = {
 			isa = PBXGroup;
 			children = (
+				9DC951551F3D51BF00B440CC /* Resources */,
 				9D8F42E21F3BEE070065C8E6 /* LCSliderView.h */,
 				9D8F42E31F3BEE070065C8E6 /* LCSliderView.m */,
-				9D814DC41F3BF5E3001D2280 /* images.xcassets */,
 			);
 			path = LCSliderView;
+			sourceTree = "<group>";
+		};
+		9DC951551F3D51BF00B440CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DC951561F3D51EC00B440CC /* sliderView.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
